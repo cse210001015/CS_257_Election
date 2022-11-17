@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>login</title>
+</head>
+<body class=" bg-sky-400">
+    <form action=" {{ url_for("user_login")}} " method="post">
+    <h1 class="my-5 font-bold font-serif text-center text-5xl ">Login Page</h1>
+    <div class="flex mx-10 justify-end py-10">
+    <div class="img flex w-1/2">
+        <img src="/static/login_img1.png" class=""/>
+    </div>
+    <div class="bg-purple-600 rounded-tl-3xl mx-20 border-4 w-96 ">
+        <ul class=" mx-20 p-5">
+            <li class="my-8 border-2 border-blue-300 rounded-md font-serif">Enter Your Username</li>
+            <input type="text" id="Username" name="username" placeholder="Username">
+            <li class="my-8 border-2 border-blue-300 rounded-md font-serif">Enter Your Password</li>
+            <input type="password" id="Password" name="password" placeholder="Password" >
+            <br>
+            <button type="submit" class="my-8 bg-violet-700 hover:bg-white cursor-pointer border-black border-2 p-1 rounded-lg">Login</button>
+        </ul>
+    </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Election made successfully</title>
+</head>
+<body>
+    <div class="w-screen h-screen bg-[url(success1.png)]">
+        <nav class="flex justify-end">
+            <button class=" bg-black text-white p-1 mx-4 my-2 rounded-lg hover:bg-red-700 hover:text-slate-300 hover:border-2 hover:border-white border-2 border-black"><a href="logout">Logout</a></button>
+        </nav>
+        <h3 class="flex justify-center text-xl my-8"> <div class="w-fit bg-sky-300 rounded-md p-1"> The Election has been successfully made. The id is {{value}}. Now please Enter the Candidate details here. </div> </h3>
+
+        <button class="flex justify-center w-full"><a href="enter_candidate" class="bg-white p-2 my-8 rounded-lg hover:text-gray-600 hover:bg-slate-200">Enter New Candidate</a></button>
+
+    </div>
+</body>
+</html>

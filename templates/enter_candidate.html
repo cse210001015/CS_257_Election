@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Enter A New Candidate</title>
+</head>
+<body>
+    {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages%}
+    {{ message }}
+    {% endfor %} {% endif %} {% endwith %}
+    <div class=" bg-gradient-to-bl from-sky-600 via-indigo-500 to-purple-800 w-screen h-screen">
+        <nav class="flex justify-end">
+            <!-- <button class=" bg-violet-600 text-white p-1 mx-4 my-2 rounded-lg hover:bg-gray-700 hover:text-slate-300 hover:border-2 hover:border-white border-2 border-black"><a href="logout">Logout</a></button> -->
+              <button class=" bg-violet-600 text-white p-1 mx-4 my-2 rounded-lg hover:bg-gray-700 hover:text-slate-300 hover:border-2 hover:border-white border-2 border-black"><a href="/login">Return to Home</a></button>
+        </nav>
+    <form action="{{ url_for("enter_candidate")}}"="" method="post">
+
+            <h1 class="py-5 font-bold font-sans text-center text-5xl text-black">Welcome</h1>
+            <h1 class="py-2 font-bold font-serif text-center text-3xl text-white">Please fill up the following</h1>
+            <div class="bg-white w-1/3 mx-auto p-7 my-7 rounded-2xl">
+                <ul class="py-5 mx-20">
+                      <li class="border-2 rounded-sm w-40 text-center my-3 bg-gray-800 text-gray-200">Election ID</li>
+        <input type="text" id="eid" name="eid" placeholder="eid"  class="rounded-sm border-2 border-black w-40">
+                      <li class="border-2 rounded-sm w-40 text-center my-3 bg-gray-800 text-gray-200">Candidate Name</li>
+        <input type="text" id="name" name="name" placeholder="name"  class="rounded-sm border-2 border-black w-40">
+                      <li class="border-2 rounded-sm w-40 text-center my-3 bg-gray-800 text-gray-200">Description</li>
+        <input type="text" id="description" name="description" placeholder="description"  class="rounded-sm border-2 border-black w-40">
+                </ul>
+            </div>
+                <div class="flex justify-center">
+                    <button type="submit" class="w-fit my-2 bg-gray-500 text-white hover:text-black hover:bg-white cursor-pointer border-black border-2 p-1 rounded-lg">Make Candidate</button>
+                   </div>
+
+    </div>
+    </form>
+</body>
+</html>

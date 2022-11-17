@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Welcome</title>
+</head>
+<body>
+      <nav class="bg-purple-700 flex justify-between">
+        <img src="/static/profile.png" class="p-3 h-16" alt="">
+        <ul class="flex justify-end p-3">
+        <!-- <button class=" text-white hover:text-black align-middle p-3"> <a href=""> Profile </a></button> -->
+        <button class=" text-white hover:text-black align-middle p-3">  <a href="logout"> LogOut </a></button>
+        
+        </ul>
+      </nav>
+      <div class="w-screen h-screen bg-purple-300 ">
+        <button class="flex py-4 mx-auto">  <a href="signup" class="bg-gray-300 p-3 rounded-xl hover:bg-blue-900 hover:text-gray-300"> Sign up new user </a></button>
+        <button class="flex py-4 mx-auto">  <a href="make_elections" class="bg-gray-300 p-3 rounded-xl hover:bg-blue-900 hover:text-gray-300"> Make a New Election </a></button>
+        <button class="flex py-4 mx-auto">  <a href="enter_candidate" class="bg-gray-300 p-3 rounded-xl hover:bg-blue-900 hover:text-gray-300"> Enter a Candidate </a></button>
+        <button class="flex py-4 mx-auto"> <a href="view_all_ongoing" class="bg-gray-300 p-3 rounded-xl hover:bg-blue-900 hover:text-gray-300">View Ongoing Elections</a> </button>
+        <button class="flex py-4 mx-auto"> <a href="view_completed_elections" class="bg-gray-300 p-3 rounded-xl hover:bg-blue-900 hover:text-gray-300">View Completed Elections</a> </button>
+        <button class="flex py-4 mx-auto"> <a href="remove_user" class="bg-gray-300 p-3 rounded-xl hover:bg-blue-900 hover:text-gray-300">Remove Users</a> </button>
+      </div>
+</body>
+</html>

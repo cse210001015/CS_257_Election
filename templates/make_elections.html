@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Start a new Election</title>
+</head>
+<body>
+    <form action="{{ url_for("make_elections")}}" method="post">
+        <div class="w-full h-fit bg-[url(kkk1.jpg)]">
+          <nav class="flex justify-end">
+            <button class=" bg-violet-600 text-white p-1 mx-4 my-2 rounded-lg hover:bg-gray-700 hover:text-slate-300 hover:border-2 hover:border-white border-2 border-black"><a href="logout">Logout</a></button>
+              <button class=" bg-violet-600 text-white p-1 mx-4 my-2 rounded-lg hover:bg-gray-700 hover:text-slate-300 hover:border-2 hover:border-white border-2 border-black"><a href="/login">Return to Home</a></button>
+        </nav>
+          <h1 class="py-5 font-bold font-serif text-center text-5xl text-blue-900">Welcome</h1>
+          <h1 class="py-2 font-bold font-serif text-center text-3xl text-white">Please fill up the following</h1>
+          <div class="bg-transparent rounded-2xl border-8 border-gray-600 w-2/5 mx-auto p-3">
+            <ul class="p-5 w-full">
+            <li class=" bg-gray-300 my-2 border-2 border-purple-700 rounded-md font-serif w-fit p-1">Enter Description for Election</li>
+          <input type="text" id="description" name="description" placeholder="description" class="rounded-sm border-2 border-violet-600 bg-slate-500 text-white">
+          <li class=" bg-gray-300 my-2 border-2 border-purple-700 rounded-md font-serif w-fit p-1">Enter Start Time for Election</li>
+          <input type="text" id="start_time" name="start_time" placeholder="start_time" class="rounded-sm border-2 border-violet-600 bg-slate-500 text-white">
+          <li class=" bg-gray-300 my-2 border-2 border-purple-700 rounded-md font-serif w-fit p-1">Enter End Time for Election</li>
+          <input type="text" id="end_time" name="end_time" placeholder="end_time" class="rounded-sm border-2 border-border-violet-600 bg-slate-500 text-white">
+          <li class=" bg-gray-300 my-2 border-2 border-purple-700 rounded-md font-serif w-fit p-1">Enter Departments eligible for Voting(0 for all)</li>
+          <input type="text" id="department" name="department" placeholder="department" class="rounded-sm border-2 border-violet-600 bg-slate-500 text-white">
+          <li class=" bg-gray-300 my-2 border-2 border-purple-700 rounded-md font-serif w-fit p-1">Enter Ranks eligible for Voting(0 for all)</li>
+          <input type="text" id="Rank" name="Rank" placeholder="Rank" class="rounded-sm border-2 border-violet-600 bg-slate-500 text-white">
+          <li class=" bg-gray-300 my-2 border-2 border-purple-700 rounded-md font-serif w-fit p-1">Enter Years eligible for Voting(0 for all)</li>
+          <input type="text" id="Year" name="Year" placeholder="Year" class="rounded-sm border-2 border-violet-600 bg-slate-500 text-white">
+          </ul> 
+        </div>
+           <div class="flex justify-center">
+            <button type="submit" class="w-fit my-2 bg-purple-500 text-white hover:text-black hover:bg-white cursor-pointer border-black border-2 p-1 rounded-lg">Make Election</button>
+           </div>
+          </form>
+
+        </div>
+    
+</body>
+</html>
