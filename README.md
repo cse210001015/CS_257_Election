@@ -23,7 +23,7 @@ The Election Management System is a web-based application built using Flask, a P
 
 ## Installation
 
-1. Clone the repository: `[git clone https://github.com/cse210001015/CS_257_Election`
+1. Clone the repository: `git clone https://github.com/cse210001015/CS_257_Election`
 2. Install the required dependencies: `pip install -r requirements.txt`
 3. Set up the MySQL database with the necessary tables and configurations.
 4. Update the database connection details in the code (`app.py`) to match your MySQL database.
