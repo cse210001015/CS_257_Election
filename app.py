@@ -1,4 +1,3 @@
-from distutils.log import error  #Berror Imported Successfully.
 from flask import Flask, render_template,request,flash,Markup
 import mysql.connector
 import pandas as pd
